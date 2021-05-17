@@ -1,0 +1,29 @@
+<div class="container">
+<div class="jumbotron">
+   <div class="row">
+       <div class="col-sm-6">
+        <app-progresso [progresso]="progresso"></app-progresso>
+       </div>
+
+       <div class="col-sm-6">
+        <app-tentativas [tentativas]="tentativas"></app-tentativas>
+    </div>
+   </div>
+   <div class="col">
+       <h6>{{instrucao}}</h6>
+       <p>{{rodadaFrase.FraseEng}}</p>
+      
+       <div class="form-floating">
+        <textarea (input)="atualizaResposta($event)" [value]="resposta" class="form-control" placeholder="Insira sua tradução aqui:" rows="1"></textarea>
+        <label for="floatingTextarea">Insira sua tradução aqui:</label>
+      </div>
+   </div>
+   <div class="row">
+       <div class="col">
+        <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-primary" (click)="verificarResposta()">Verificar</button>
+        </div>
+       </div>
+   </div>
+</div>
+</div>
