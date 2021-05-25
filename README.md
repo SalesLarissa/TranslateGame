@@ -1,4 +1,6 @@
-# App1
+# Translate Game in Angular
+
+<img src="https://github.com/SalesLarissa/Images/blob/master/1617142171808.png">
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
 
